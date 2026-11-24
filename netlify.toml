@@ -1,0 +1,26 @@
+[build]
+  command = "echo Building Capital City Quiz"
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  external_node_modules = ["express", "pg", "ejs", "cookie-session"]
+
+[functions."api"]
+  included_files = ["views/**"]
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/api/"
+  status = 200
+
+[[redirects]]
+  from = "/submit"
+  to = "/.netlify/functions/api/submit"
+  status = 200
+
+[[redirects]]
+  from = "/health"
+  to = "/.netlify/functions/api/health"
+  status = 200

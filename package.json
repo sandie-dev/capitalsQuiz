@@ -1,0 +1,22 @@
+{
+  "name": "capital-city-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capital City Quiz using Express, EJS and Neon PostgreSQL",
+  "type": "module",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "serverless-http": "^3.2.0"
+  }
+}
