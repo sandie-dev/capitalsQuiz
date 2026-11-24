@@ -1,4 +1,4 @@
-# Capital City Quiz (Node.js 22)
+# Capital City Quiz 
 
 Express + EJS + Neon PostgreSQL quiz, prepared for local development and Netlify Functions.
 
